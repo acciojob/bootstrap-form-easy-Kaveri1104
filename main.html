@@ -4,13 +4,70 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+<div class="container">
+	<h2 class="text-center">Internship Form</h2>
+	<div class="form">
+		<div class="row">
+			<div class="col-md-4 col-sm-4">
+				<div class="form-group">
+					<label for="first-name-input">First Name</label>
+					<input type="text" id="first-name-input" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="form-group">
+					<label for="last-name-input">Last Name</label>
+					<input type="text" id="last-name-input" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-4">
+				<div class="form-group">
+					<label for="email-input">Email address</label>
+					<input type="email" class="form-control" id="email-input" placeholder="xyz@abc.com">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="college-input">College</label>
+					<input type="text" class="form-control" id="college-input">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="conditions-checkbox">Graduation Year</label>
+					<select id="conditions-checkbox" class="form-control"> 
+						<option>Choose...</option>
+						<option>2020</option>
+						<option>2021</option>
+						<option>2022</option>
+						<option>2023</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="roll-no-input">Roll No</label>
+					<input type="number" id="roll-no-input" class="form-control">
+				</div>
+			</div>
+		</div>
+		<div class="checkbox">
+			<label><input type="checkbox">Agree to the terms and conditions</label>
+		</div>
+		<button class="btn btn-primary" type="submit">Submit form</button>
+	</div>
+</div>
 </body>
 
 </html>

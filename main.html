@@ -15,32 +15,37 @@
 </script>
 <div class="container">
 	<h2 class="text-center">Internship Form</h2>
-	<div class="form">
+	<form class="was-validated">
 		<div class="row">
 			<div class="col-md-4 col-sm-4">
 				<div class="form-group">
-					<label for="first-name-input">First Name</label>
+					<label for="first-name-input" class="form-label">First Name</label>
 					<input type="text" id="first-name-input" class="form-control" required>
+					<div class="invalid-feedback">First name required!</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<div class="form-group">
-					<label for="last-name-input">Last Name</label>
+					<label for="last-name-input" class="form-label">Last Name</label>
 					<input type="text" required id="last-name-input" class="form-control">
+					<div class="invalid-feedback">Last time required!</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<div class="form-group">
-					<label for="email-input">Email Address</label>
+					<label for="email-input" class="form-label">Email Address</label>
 					<input type="email" required class="form-control" id="email-input" placeholder="xyz@abc.com">
+					<div class="invalid-feedback">email required!</div>
 				</div>
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="col-md-6">
 				<div class="form-group">
-					<label for="college-input">College</label>
+					<label for="college-input" class="form-label">College</label>
 					<input type="text" required class="form-control" id="college-input">
+					<div class="invalid-feedback">please provide valid college</div>
 				</div>
 			</div>
 			<div class="col-md-3">
@@ -53,20 +58,23 @@
 						<option>2022</option>
 						<option>2023</option>
 					</select>
+					<div class="invalid-feedback">please select valid graduation year</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<div class="form-group">
 					<label for="roll-no-input">Roll No</label>
 					<input type="text" required id="roll-no-input" class="form-control">
+					<div class="invalid-feedback">please provide valid roll no</div>
 				</div>
 			</div>
 		</div>
 		<div class="checkbox">
 			<label><input type="checkbox">Agree to the terms and conditions</label>
+			<div class="invalid-feedback">you must agree before submitting</div>
 		</div>
 		<button class="btn btn-primary" type="submit">Submit form</button>
-	</div>
+	</form>
 </div>
 </body>
 
